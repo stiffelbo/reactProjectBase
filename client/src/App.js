@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './App.scss';
 import {BrowserRouter, Route} from 'react-router-dom';
 import {AnimatedSwitch} from 'react-router-transition';
+import styles from './styles/animationSwitch.scss';
 //components import
-import MainLayout from '../MainLayout/MainLayout.js';
+import MainLayout from './components/layout/MainLayout/MainLayout';
 
 const App = () => (
   <BrowserRouter>
@@ -14,8 +14,6 @@ const App = () => (
         atActive={{ opacity: 1 }}
         className={styles.switchWrapper}
       >
-        <Route exact path='/' component={} />
-
       </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>
